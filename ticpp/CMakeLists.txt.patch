@@ -1,0 +1,15 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -25,3 +25,12 @@ target_include_directories(ticpp
+ target_compile_definitions(ticpp
+     PUBLIC TIXML_USE_TICPP
+ )
++
++file(GLOB_RECURSE HeaderFileList "${CMAKE_CURRENT_SOURCE_DIR}/*.h")
++install(
++    TARGETS ticpp
++    ARCHIVE DESTINATION lib
++    LIBRARY DESTINATION lib
++    RUNTIME DESTINATION bin
++)
++install(FILES ${HeaderFileList} DESTINATION include)
