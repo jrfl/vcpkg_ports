@@ -1,0 +1,6 @@
+Source: ticpp
+# Version is taken from the last version number listed in changes.txt
+# since it does not seem to track across files.
+Version: 2.5.3
+Description: 'TiCPP' is short for the official name TinyXML++. It is a completely new interface to TinyXML (http://www.grinninglizard.com/tinyxml/) that uses MANY of the C++ strengths. Templates, exceptions, and much better error handling. 
+#Build-Depends: tinyxml
